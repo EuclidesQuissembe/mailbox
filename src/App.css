@@ -1,38 +1,357 @@
-.App {
+body {
+  margin-top: 20px;
+  background: #eee;
+}
+
+/* EMAIL */
+.email {
+  padding: 20px 10px 15px 10px;
+  font-size: 1em;
+}
+
+.email .btn.search {
+  font-size: 0.9em;
+}
+
+.email h2 {
+  margin-top: 0;
+  padding-bottom: 8px;
+}
+
+.email .nav.nav-pills > li > a {
+  border-top: 3px solid transparent;
+}
+
+.email .nav.nav-pills > li > a > .fa {
+  margin-right: 5px;
+}
+
+.email .nav.nav-pills > li.active > a,
+.email .nav.nav-pills > li.active > a:hover {
+  background-color: #f6f6f6;
+  border-top-color: #3c8dbc;
+}
+
+.email .nav.nav-pills > li.active > a {
+  font-weight: 600;
+}
+
+.email .nav.nav-pills > li > a:hover {
+  background-color: #f6f6f6;
+}
+
+.email .nav.nav-pills.nav-stacked > li > a {
+  color: #666;
+  border-top: 0;
+  border-left: 3px solid transparent;
+  border-radius: 0px;
+}
+
+.email .nav.nav-pills.nav-stacked > li.active > a,
+.email .nav.nav-pills.nav-stacked > li.active > a:hover {
+  background-color: #f6f6f6;
+  border-left-color: #3c8dbc;
+  color: #444;
+}
+
+.email .nav.nav-pills.nav-stacked > li.header {
+  color: #777;
+  text-transform: uppercase;
+  position: relative;
+  padding: 0px 0 10px 0;
+}
+
+.email table {
+  font-weight: 600;
+}
+
+.email table a {
+  color: #666;
+}
+
+.email table tr.read > td {
+  background-color: #f6f6f6;
+}
+
+.email table tr.read > td {
+  font-weight: 400;
+}
+
+.email table tr td > i.fa {
+  font-size: 1.2em;
+  line-height: 1.5em;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.email table tr td > i.fa-star {
+  color: #f39c12;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.email table tr td > i.fa-bookmark {
+  color: #e74c3c;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.email table tr > td.action {
+  padding-left: 0px;
+  padding-right: 2px;
+}
+
+.grid {
+  position: relative;
+  width: 100%;
+  background: #fff;
+  color: #666666;
+  border-radius: 2px;
+  margin-bottom: 25px;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.grid .grid-header:after {
+  clear: both;
+}
+
+.grid .grid-header span,
+.grid .grid-header > .fa {
+  display: inline-block;
+  margin: 0;
+  font-weight: 300;
+  font-size: 1.5em;
+  float: left;
+}
+
+.grid .grid-header span {
+  padding: 0 5px;
+}
+
+.grid .grid-header > .fa {
+  padding: 5px 10px 0 0;
+}
+
+.grid .grid-header > .grid-tools {
+  padding: 4px 10px;
+}
+
+.grid .grid-header > .grid-tools a {
+  color: #999999;
+  padding-left: 10px;
+  cursor: pointer;
+}
+
+.grid .grid-header > .grid-tools a:hover {
+  color: #666666;
+}
+
+.grid .grid-body {
+  padding: 15px 20px 15px 20px;
+  font-size: 0.9em;
+  line-height: 1.9em;
+}
+
+.grid .full {
+  padding: 0 !important;
+}
+
+.grid .transparent {
+  box-shadow: none !important;
+  margin: 0px !important;
+  border-radius: 0px !important;
+}
+
+.grid.top.black > .grid-header {
+  border-top-color: #000000 !important;
+}
+
+.grid.bottom.black > .grid-body {
+  border-bottom-color: #000000 !important;
+}
+
+.grid.top.blue > .grid-header {
+  border-top-color: #007be9 !important;
+}
+
+.grid.bottom.blue > .grid-body {
+  border-bottom-color: #007be9 !important;
+}
+
+.grid.top.green > .grid-header {
+  border-top-color: #00c273 !important;
+}
+
+.grid.bottom.green > .grid-body {
+  border-bottom-color: #00c273 !important;
+}
+
+.grid.top.purple > .grid-header {
+  border-top-color: #a700d3 !important;
+}
+
+.grid.bottom.purple > .grid-body {
+  border-bottom-color: #a700d3 !important;
+}
+
+.grid.top.red > .grid-header {
+  border-top-color: #dc1200 !important;
+}
+
+.grid.bottom.red > .grid-body {
+  border-bottom-color: #dc1200 !important;
+}
+
+.grid.top.orange > .grid-header {
+  border-top-color: #f46100 !important;
+}
+
+.grid.bottom.orange > .grid-body {
+  border-bottom-color: #f46100 !important;
+}
+
+.grid.no-border > .grid-header {
+  border-bottom: 0px !important;
+}
+
+.grid.top > .grid-header {
+  border-top-width: 4px !important;
+  border-top-style: solid !important;
+}
+
+.grid.bottom > .grid-body {
+  border-bottom-width: 4px !important;
+  border-bottom-style: solid !important;
+}
+
+.aa {
+  position: absolute;
+  top: -20%;
+  left: -20%;
+  display: block;
+  width: 140%;
+  height: 140%;
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  opacity: 0;
+  background: rgb(255, 255, 255);
+}
+
+#sidebar {
+  min-width: 250px;
+  max-width: 250px;
+  transition: all 0.3s;
+}
+
+#sidebar.active {
+  margin-left: -250px;
+}
+
+#sidebar .sidebar-header {
+  padding: 20px;
+}
+
+#sidebar ul.components {
+  padding: 20px 0;
+}
+
+#sidebar ul p {
+  padding: 10px;
+}
+
+#sidebar ul li a {
+  padding: 10px;
+  font-size: 1.1em;
+  display: block;
+}
+
+#sidebar ul li a:hover {
+  color: #000;
+}
+
+#sidebar ul li.active > a,
+a[aria-expanded="true"] {
+}
+
+a[data-toggle="collapse"] {
+  position: relative;
+}
+
+.dropdown-toggle::after {
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+
+ul ul a {
+  font-size: 0.9em !important;
+  padding-left: 30px !important;
+}
+
+ul.CTAs {
+  padding: 20px;
+}
+
+ul.CTAs a {
+  text-align: center;
+  font-size: 0.9em !important;
+  display: block;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+a.download {
+  background: #fff;
+}
+
+a.article,
+a.article:hover {
+  color: #fff !important;
+}
+
+.rounded,
+.rounded-sm {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  border-radius: 100%;
+  border: 1px solid lightgray;
+  font-weight: bold;
 }
 
-.App-link {
-  color: #61dafb;
+.rounded {
+  width: 45px;
+  height: 45px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.rounded-sm {
+  width: 35px;
+  height: 35px;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex p {
+  margin-right: -15px;
+  background-color: #ffffff;
+}
+
+.flex p:hover {
+  z-index: 9;
+}
+
+.checkbox-invisible {
+  display: none;
+}
+
+.checkbox-visible {
+  display: block;
+}
+
+.item:hover .checkbox {
+  display: block;
+}
+
+.item:hover .owner {
+  display: none;
 }
